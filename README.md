@@ -1,4 +1,4 @@
-# beebole-console-manager <b>V0.0.1</b>
+# beebole-console-manager <b>V1.0.0</b>
 a command line beebole api interface to update your beebole account!
 
 <h3>Install</h3>
