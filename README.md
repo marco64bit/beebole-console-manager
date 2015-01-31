@@ -32,7 +32,7 @@ else run "python (path_to_folder)/main.py ?" to view beebole help<br><br>
 
 <ul>
 <li><b>?: </b> view beebole help</li>
-<li><b>set_token: </b> set your api token and account name to authorize the application</li>
+<li><b>set_token (api-token) (account name): </b> set your api token and account name to authorize the application</li>
 <li><b>List: </b> list all of your company in beebole</li>
 <li><b>List -s (search string): </b> filter your beebole company</li>
 </ul>
