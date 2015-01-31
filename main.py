@@ -6,6 +6,7 @@ from operator import itemgetter
 import requests
 import json
 import sys
+import os
 
 
 TOKEN = ""
@@ -83,8 +84,12 @@ class BeeboleApiManager(object):
         pass
 
 
+def rel_path(path):
+    return os.path.join( os.path.dirname(os.path.abspath(__file__)), path)
+
+
 def load_token():
-    with open('app-token.json', 'rb') as f:
+    with open(rel_path('app-token.json'), 'rb') as f:
         token = json.load(f)
         global TOKEN
         global ACCOUNT_NAME
@@ -96,7 +101,7 @@ def load_token():
 
 
 def save_token(token, account_name):
-    with open('app-token.json', 'wb') as f:
+    with open(rel_path('app-token.json'), 'wb') as f:
         json.dump({'app-token': token, 'account_name': account_name}, f)
     load_token()
 
