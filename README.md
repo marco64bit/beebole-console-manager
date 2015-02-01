@@ -25,14 +25,38 @@ beebole
 run "source ~/.bash_aliases<br>
 
 
+
 <h3>Usage</h3>
 
 if you set beebole as alias type "beebole ?" to view beebole help<br>
 else run "python (path_to_folder)/main.py ?" to view beebole help<br><br>
 
 <ul>
-<li><b>?: </b> view beebole help</li>
-<li><b>set_token (api-token) (account name): </b> set your api token and account name to authorize the application</li>
-<li><b>List: </b> list all of your company in beebole</li>
-<li><b>List -s (search string): </b> filter your beebole company</li>
+<li><b>set-token (token) (account_name)</b> 
+	'set beebole token to authentication'
+
+<li><b>add (alias_name) (project id) (task_id) (comment_optional)</b> 
+  	'add alias to set with alias_name the current project'</li>
+
+<li><b>set (project_alias)</b> 
+	'set your current work to a project'</li>
+
+<li><b>set-date (start-date) (finish-date)</b> 
+	'set your work date range hh:mm'</li>
+	
+<li><b>current </b> 
+  'get current project'</li>
+
+<li><b>list _aliases</b> 
+  	'all aliases set with beebole add'</li>
+
+<li><b>list     </b> 
+    'return list of all companies'</li>
+
+<li><b>list -s (string)  </b> 
+    'search in all companies'</li>
+
+<li><b>? </b> 
+    'help'</li>
 </ul>
+
